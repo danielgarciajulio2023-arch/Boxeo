@@ -1,0 +1,85 @@
+body {
+ 
+  margin: 0;
+ 
+  font-family: Arial, sans-serif;
+ 
+}
+ 
+.dashboard {
+ 
+  display: flex;
+ 
+  flex-direction: column;
+ 
+  min-height: 100vh;
+ 
+}
+ 
+.header {
+ 
+  display: flex;
+ 
+  align-items: center;
+ 
+  background: #282c34;
+ 
+  color: white;
+ 
+  padding: 1rem;
+ 
+}
+ 
+.logo {
+ 
+  width: 40px;
+ 
+  margin-right: 1rem;
+ 
+}
+ 
+.main-content {
+ 
+  display: flex;
+ 
+  flex: 1;
+ 
+}
+ 
+.sidebar {
+ 
+  width: 200px;
+ 
+  background: #f4f4f4;
+ 
+  padding: 1rem;
+ 
+}
+ 
+.menu-item {
+ 
+  margin: 0.5rem 0;
+ 
+  cursor: pointer;
+ 
+}
+ 
+.content {
+ 
+  flex: 1;
+ 
+  padding: 2rem;
+ 
+}
+ 
+.footer {
+ 
+  background: #282c34;
+ 
+  color: white;
+ 
+  text-align: center;
+ 
+  padding: 1rem;
+ 
+}
