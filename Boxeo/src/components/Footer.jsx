@@ -1,9 +1,9 @@
+import React from "react";
+
 export default function Footer() {
-  const year = new Date().getFullYear();
- 
   return (
-<footer className="footer">
-<p>© {year} Proyecto Integrador - Todos los derechos reservados</p>
-</footer>
+    <footer className="footer">
+      <p>© 2026 Boxing Products Store. Todos los derechos reservados.</p>
+    </footer>
   );
 }

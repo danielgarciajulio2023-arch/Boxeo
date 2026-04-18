@@ -1,24 +1,25 @@
-const Sidebar = () => {
-  const disciplines = ['Boxeo', 'MMA', 'Muay Thai', 'BJJ', 'Karate'];
- 
+import React from "react";
+
+export default function Sidebar() {
+  const menuItems = [
+    { name: "Panel General", icon: "📊" },
+    { name: "Productos", icon: "🥊" },
+    { name: "Categorías", icon: "📦" },
+    { name: "Estadísticas", icon: "📈" },
+    { name: "Configuración", icon: "⚙️" },
+  ];
+
   return (
-<aside className="sidebar">
-<div className="sidebar-brand">
-<h2>Strike<span>Stock</span></h2>
-</div>
-<nav>
-<ul>
-          {disciplines.map((item, index) => (
-<li key={index} className="nav-item">
-              {item}
-</li>
-          ))}
-</ul>
-</nav>
-<div className="admin-status">
-<span className="dot"></span> Modo Admin
-</div>
-</aside>
+    <aside className="sidebar">
+      <ul>
+        {menuItems.map((item, i) => (
+          <li key={i} className={i === 0 ? "active" : ""}>
+            <span className="icon">{item.icon}</span>
+            <span>{item.name}</span>
+          </li>
+        ))}
+      </ul>
+      <button className="logout-btn">Cerrar sesión</button>
+    </aside>
   );
-};
-export default Sidebar;
+}

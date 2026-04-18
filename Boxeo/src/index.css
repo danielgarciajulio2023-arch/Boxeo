@@ -1,85 +1,95 @@
 body {
- 
   margin: 0;
- 
-  font-family: Arial, sans-serif;
- 
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fa;
+  color: #333;
 }
- 
-.dashboard {
- 
-  display: flex;
- 
-  flex-direction: column;
- 
-  min-height: 100vh;
- 
-}
- 
+
+/* Header */
 .header {
- 
-  display: flex;
- 
-  align-items: center;
- 
-  background: #282c34;
- 
-  color: white;
- 
+  background: #1e1e2f;
+  color: #fff;
   padding: 1rem;
- 
-}
- 
-.logo {
- 
-  width: 40px;
- 
-  margin-right: 1rem;
- 
-}
- 
-.main-content {
- 
-  display: flex;
- 
-  flex: 1;
- 
-}
- 
-.sidebar {
- 
-  width: 200px;
- 
-  background: #f4f4f4;
- 
-  padding: 1rem;
- 
-}
- 
-.menu-item {
- 
-  margin: 0.5rem 0;
- 
-  cursor: pointer;
- 
-}
- 
-.content {
- 
-  flex: 1;
- 
-  padding: 2rem;
- 
-}
- 
-.footer {
- 
-  background: #282c34;
- 
-  color: white;
- 
   text-align: center;
- 
+  font-weight: bold;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #2c2c3e;
+  color: #fff;
+  min-height: 100vh;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.sidebar li:hover {
+  color: #00c4ff;
+}
+
+/* Main Layout */
+.main-content {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Cards estilo métricas */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.card p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Barra de progreso */
+.progress-container {
+  background: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.progress-bar {
+  height: 12px;
+  background: #00c4ff;
+  width: 33%; /* dinámico */
+}
+
+/* Footer */
+.footer {
+  background: #1e1e2f;
+  color: #fff;
+  text-align: center;
   padding: 1rem;
- 
 }
